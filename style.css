@@ -3,6 +3,12 @@ p {
 	font-size: 100px;
 }
 ul {
+body {
+	background-color: #795649;
+	}
+#theul {
+	position: relative;
+	top: 120px;
 	list-style-type: none;
 	display: inline;
 }
@@ -10,4 +16,23 @@ img {
 	position: relative;
 	max-width: 30%;
 	border-radius: 3px;
+#oppeognede {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#enesiden {
+	float: left;
+	left: 40px;
+	display: block;
+}
+#andresiden {
+	float: right;
+	right: 40px;
+	display: inline;
+}
+.nede {
+	position: relative;
+	top: 130px;
+}
 }
