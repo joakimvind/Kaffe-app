@@ -1,0 +1,80 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
+		<link rel="stylesheet" href="flipclock.css">
+			<link rel="stylesheet" type="text/css" href="style.css" > 
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="js/flipclock.js"></script>		
+	</head>
+	<body>
+	<p id="change"> Rens filter med varmt vann, tilfør nykvernet kaffe, og start bloom-en med 50g vann</p>
+	<h1 id="change2"> Før du starter</h1>
+	<img id="change3" src="img/first.png" />
+	<div class="clock"></div>
+	<div class="message"></div>
+
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+
+			clock = $('.clock').FlipClock(180, {
+		        clockFace: 'MinuteCounter',
+		        countdown: true,
+		        callbacks: {
+		        	interval: function() {
+                                        var time = this.factory.getTime().time;
+                                        
+                                        if(time == 167) {
+                                        		document.getElementById("change3").src ="img/second.png"; 
+                                        		document.getElementById("change2").innerHTML ="Blooming"; 
+                                                document.getElementById("change").innerHTML ="Kaffen bobler fordi CO2 utløses fra de nykvernede bønnene. Dette gir et jevnere og rikere kaffebrygg.";
+                                        }
+                                        if(time == 160) {
+                                        		document.getElementById("change3").src ="img/third.png"; 
+                                        		document.getElementById("change2").innerHTML ="Forbered helling"; 
+                                                document.getElementById("change").innerHTML ="Ved 02:30 skal du helle 100g vann i ditt brygg. Hell forsiktig, i sirkulære bevegelser, for å sikre et jevnt brygg";
+                                        }
+                                        if(time == 150) {
+                                        		document.getElementById("change3").src ="img/fourth.png"; 
+                                        		document.getElementById("change2").innerHTML ="Hell 100g vann"; 
+                                                document.getElementById("change").innerHTML ="Hell forsiktig i sirkulære bevegelser for å sikre et jevnt brygg";
+                                        }
+                                        if(time == 135) {
+                                        		document.getElementById("change3").src ="img/second.png"; 
+                                        		document.getElementById("change2").innerHTML ="La vannet renne gjennom"; 
+                                                document.getElementById("change").innerHTML ="Ta en pause i hellingen, og vent mens vannet ekstraherer de gode smakene fra kaffen";
+                                        }
+                                        if(time == 105) {
+                                        		document.getElementById("change3").src ="img/fourth.png"; 
+                                        		document.getElementById("change2").innerHTML ="Hell 100g vann"; 
+                                                document.getElementById("change").innerHTML ="Fortsett hellingen med en ny helling av 100g vann. Forsiktige, sirkulære bevegelser.";
+                                        }
+                                        if(time == 80) {
+                                        		document.getElementById("change3").src ="img/second.png"; 
+                                        		document.getElementById("change2").innerHTML ="La vannet renne gjennom"; 
+                                                document.getElementById("change").innerHTML ="Ta en pause i hellingen, og vent mens vannet ekstraherer de gode smakene fra kaffen";
+                                        }
+                                        if(time == 70) {
+                                        		document.getElementById("change3").src ="img/fourth.png"; 
+                                        		document.getElementById("change2").innerHTML ="Hell resten av vannet"; 
+                                                document.getElementById("change").innerHTML ="Fullfør bryggingen ved å helle det resterende vannet til kjøkkenvekten viser 400g";
+                                        }
+                                        if(time == 0) {
+                                        		document.getElementById("change3").src ="img/last.png"; 
+                                        		document.getElementById("change2").innerHTML ="Kaffen er ferdig brygget"; 
+                                                document.getElementById("change").innerHTML ="Bla bla.";
+                                        }
+		        }
+		    }
+		    });
+
+		});
+		
+	</script>
+	
+	</body>
+</html>

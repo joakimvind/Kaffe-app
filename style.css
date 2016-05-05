@@ -1,16 +1,22 @@
 body {
 	background-color: #795649;
 	}
+
 #theul {
 	position: relative;
 	top: 120px;
 	list-style-type: none;
 	display: inline;
 }
+.clock {
+	margin: 0 auto;
+}
 img {
 	position: relative;
 	max-width: 30%;
 	border-radius: 3px;
+	text-align: center;
+}
 #oppeognede {
 	display: block;
     margin-left: auto;
@@ -30,4 +36,63 @@ img {
 	position: relative;
 	top: 130px;
 }
+#amount {
+    border: 0;
+    color: #f6931f;
+    font-weight: bold;
 }
+.menu-btn div {
+ position: absolute;
+ left: 100%;
+ top: 64%;
+ padding-right: 8px;
+ margin-top: -0.50em;
+ line-height: 1.2;
+ font-size: 18px;
+ font-weight: 200;
+ vertical-align: middle;
+ z-index: 99;
+}
+ 
+.menu-btn span {
+ display: block;
+ width: 19px;
+ height: 3px;
+ margin: 4px 0;
+ background: rgb(0,0,0);
+ z-index: 99;
+}
+ 
+.responsive-menu{
+ display: none;
+}
+#change3 {
+	position: absolute;
+	top: 300px;
+	text-align: center;
+}
+ 
+.expand {
+ display: block !important; 
+}
+#denandreul {
+	list-style-image: url('img/coffeebeans1.png');
+	list-style-type: square;
+	list-style-position: outside;
+}
+li a {
+    display: block;
+    margin: 10px 0 7px 0;
+    background-position: 97% center;
+    font-size: 18px;
+    color: black;
+    padding: 5px 0 0 20px;
+    text-decoration: none;
+}
+#change {
+	position: relative;
+	text-align: center;
+	top: 250px;
+}
+.brown { background-color: #61473f; }
+
