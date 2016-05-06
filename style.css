@@ -94,5 +94,15 @@ li a {
 	text-align: center;
 	top: 250px;
 }
+#startbutton {
+		position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #5d4037;
+	border: none;
+	bottom: 0px;
+	left: 0px;
+	color: #fcc018;
+}
 .brown { background-color: #61473f; }
 

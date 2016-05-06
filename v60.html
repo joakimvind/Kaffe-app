@@ -33,6 +33,7 @@
 			clock = $('.clock').FlipClock(180, {
 		        clockFace: 'MinuteCounter',
 		        countdown: true,
+                        autoStart: false,
 		        callbacks: {
 		        	interval: function() {
 		        						var button = document.getElementById("theButton");
@@ -89,6 +90,12 @@
 		});
 		
 	</script>
+               <script>
+        function startMethod() {
+        clock.start();
+        document.getElementById("startbutton").innerHTML="Start på nytt";
+}
+        </script>
 	
 	</body>
 </html>
