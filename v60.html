@@ -18,18 +18,23 @@
 		<input type="text" id="formValueId" name="valueId"/>
 		<input type="button" id="theButton2"/>
 	</form>
+
+        <div id="centered">
+        <img id="change3" class="menu" src="img/first.png" />
+        </div>
+        <h1> V60 Brygg </h1>
 	<p id="change"> Rens filter med varmt vann, tilfør nykvernet kaffe, og start bloom-en med 50g vann</p>
-	<h1 id="change2"> Før du starter</h1>
-	<img id="change3" src="img/first.png" />
+	<h2 id="change2"> Før du starter</h2>
 	 <a href="atest.html"> <img id="backbutton" src="img/backbutton.png" /> </a>
 	<div class="clock"></div>
 	<div class="message"></div>
+        <button id="startbutton"onClick="startMethod()"> Start! </button>
+ 
 
 	<script type="text/javascript">
-		var clock;
+		window.clock;
 		
 		$(document).ready(function() {
-
 			clock = $('.clock').FlipClock(180, {
 		        clockFace: 'MinuteCounter',
 		        countdown: true,
@@ -40,12 +45,12 @@
 		        						var button2 = document.getElementById("theButton2");
 		        						var value =  button.form.valueId.value;
 		        						var value2 = button2.form.valueId.value;
+
                                         var time = this.factory.getTime().time;
                                         
                                         if(time == 167) {
                                         		document.getElementById("change3").src ="img/second.png"; 
                                         		document.getElementById("change2").innerHTML ="Blooming"; 
-                                                document.getElementById("change").innerHTML ="Kaffen bobler fordi CO2 utløses fra de nykvernede bønnene. Dette gir et jevnere og rikere kaffebrygg.";
                                                 document.getElementById("change").innerHTML ="Kaffen bobler fordi CO2 utløses fra de nykvernede bønnene. Dette gir et jevnere og rikere kaffebrygg. This is the user input variables " + value + " " + value2;
                                         }
                                         if(time == 160) {

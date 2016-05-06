@@ -9,13 +9,20 @@ body {
 	display: inline;
 }
 .clock {
-	margin: 0 auto;
+	position: absolute;
+    top: 35%;
+    left: 40%;
+  	bottom: 50%;
+    margin-left: -110px;
+    margin-top: -148px;
 }
-img {
-	position: relative;
-	max-width: 30%;
-	border-radius: 3px;
-	text-align: center;
+#centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  	bottom: 50%;
+    margin-left: -110px;
+    margin-top: -148px;
 }
 #oppeognede {
 	display: block;
@@ -25,12 +32,13 @@ img {
 #enesiden {
 	float: left;
 	left: 40px;
-	display: block;
+	display: inline;
 }
 #andresiden {
 	float: right;
 	right: 40px;
 	display: inline;
+	top: -10px;
 }
 .nede {
 	position: relative;
@@ -93,6 +101,24 @@ li a {
 	position: relative;
 	text-align: center;
 	top: 250px;
+}
+#backbutton {
+	width: 10%;
+	position: absolute;
+	top: 1%;
+	left: 0%;
+}
+h1 {
+	 background-color: #5d4037;
+	 border-bottom: 1px solid black;
+	 text-align: center;
+}
+h2 {
+	background-color: #5d4037;
+	color: #fcc018;
+	position: relative;
+	top: 20%;
+	text-align: center;
 }
 #startbutton {
 		position: absolute;
