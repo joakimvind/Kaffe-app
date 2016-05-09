@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
 		<link rel="stylesheet" href="flipclock.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" />
 			<link rel="stylesheet" type="text/css" href="style.css" > 
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -10,14 +11,16 @@
 		<script src="js/flipclock.js"></script>		
 	</head>
 	<body>
+	<div id="theforms">
 	<form>
-		<input type="text" id="formValueId" name="valueId"/>
-		<input type="button" id="theButton"/>
+		<input type="text" id="formValueId" name="valueId" placeholder="Gram kaffe"/>
+		<input type="button" id="theButton" class="myFormButton" />
 	</form>
 	<form>
-		<input type="text" id="formValueId" name="valueId"/>
-		<input type="button" id="theButton2"/>
+		<input type="text" id="formValueId" name="valueId" placeholder="Gram vann"/>
+		<input type="button" id="theButton2" class="myFormButton" />
 	</form>
+	</div>
 
         <div id="centered">
         <img id="change3" class="menu" src="img/first.png" />
